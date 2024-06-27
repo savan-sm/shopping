@@ -65,16 +65,17 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <com.google.android.material.imageview.ShapeableImageView
+                    <ImageButton
+                        android:id="@+id/unlike"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:layout_marginStart="150dp"
+                        android:layout_marginStart="140dp"
                         android:layout_marginTop="190dp"
-                        android:id="@+id/unlike"
                         android:src="@mipmap/unfillheart"
                         app:layout_constraintBottom_toBottomOf="@+id/tshirt"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
                         android:id="@+id/textView"

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.appcompat.widget.AppCompatButton
 import com.google.android.material.imageview.ShapeableImageView
 
@@ -23,7 +24,7 @@ class GridCategory : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val likeunlike = view.findViewById<ShapeableImageView>(R.id.unlike)
+        val likeunlike = view.findViewById<ImageButton>(R.id.unlike)
         val p2 = view.findViewById<ShapeableImageView>(R.id.p2)
         val p3 = view.findViewById<ShapeableImageView>(R.id.p3)
         val p4 = view.findViewById<ShapeableImageView>(R.id.p4)
