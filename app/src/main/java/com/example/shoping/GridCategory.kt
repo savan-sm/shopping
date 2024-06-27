@@ -25,7 +25,7 @@ class GridCategory : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val likeunlike = view.findViewById<ImageButton>(R.id.unlike)
-        val p2 = view.findViewById<ShapeableImageView>(R.id.p2)
+        val p2 = view.findViewById<ImageButton>(R.id.p2)
         val p3 = view.findViewById<ShapeableImageView>(R.id.p3)
         val p4 = view.findViewById<ShapeableImageView>(R.id.p4)
         val p5 = view.findViewById<ShapeableImageView>(R.id.p5)
