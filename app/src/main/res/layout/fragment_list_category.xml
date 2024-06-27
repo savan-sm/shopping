@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ListCategory">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/tshirt"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/l1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="368dp"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+
+                        android:text="LAMERAI"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+
+                        android:textColor="#555555"
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/tshirt1"
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/l2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="368dp"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+                        android:textColor="#555555"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price1"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle1" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star1"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price1" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star1"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/l3"
+                        android:layout_marginStart="368dp"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+                        android:textColor="#555555"
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price2"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star2"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price2" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/l4"
+                        android:layout_marginStart="368dp"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+                        android:textColor="#555555"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price3"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle3" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star3"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price3" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star3"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="368dp"
+                        android:id="@+id/l5"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+                        android:textColor="#555555"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price4"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle4" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star4"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price4" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star4"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/l6"
+                        android:layout_marginStart="368dp"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+                        android:letterSpacing="0.3"
+
+                        android:textStyle="bold"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+
+                        android:textColor="#555555"
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price5"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle5" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star5"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="132dp"
+                        android:layout_marginTop="2dp"
+                        android:text="4.8 Rating"
+                        android:textColor="#555555"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price5" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="368dp"
+                        android:id="@+id/l7"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+                        android:textColor="#555555"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price6"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle6" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star6"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price6" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star6"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="100dp"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/tshirt4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="368dp"
+                        android:id="@+id/l8"
+                        android:layout_marginTop="100dp"
+                        android:src="@mipmap/unfillheart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/title7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="8dp"
+                        android:text="LAMERAI"
+
+                        android:textStyle="bold"
+                        android:letterSpacing="0.3"
+                        android:textColor="#555555"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/subtitle7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="122dp"
+                        android:textColor="#555555"
+
+                        android:layout_marginTop="5dp"
+                        android:text="Recycle Boucle Knit Cardigan Pink"
+                        android:textSize="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/title7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="121dp"
+                        android:layout_marginTop="5dp"
+                        android:text="$120"
+                        android:id="@+id/price7"
+                        android:textColor="#DD8560"
+                        android:textSize="18dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/subtitle7" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/star7"
+                        android:src="@mipmap/star"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="2dp"
+                        android:textColor="#555555"
+                        android:text="4.8 Rating"
+                        android:textSize="14dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price7" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="120dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/star7"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size"
+                            android:layout_gravity="center"
+                            android:textSize="14dp" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/s" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/m" />
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="25dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_height="25dp"
+                            android:src="@mipmap/l" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:textSize="18dp"
+                    android:layout_height="30dp"
+                    android:fontFamily="monospace"
+                    android:id="@+id/one1"
+                    android:text="1"
+                    android:background="@drawable/pagebtn" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/two1"
+                    android:layout_marginStart="13dp"
+                    android:background="@drawable/pagebtn"
+                    android:fontFamily="monospace"
+                    android:text="2"
+                    android:textSize="18dp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:textSize="18dp"
+                    android:id="@+id/three1"
+                    android:fontFamily="monospace"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="13dp"
+                    android:text="3"
+                    android:background="@drawable/pagebtn" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:textSize="18dp"
+                    android:id="@+id/four1"
+                    android:layout_height="30dp"
+                    android:fontFamily="monospace"
+                    android:layout_marginStart="13dp"
+                    android:text="4"
+                    android:background="@drawable/pagebtn" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:fontFamily="monospace"
+                    android:id="@+id/five1"
+                    android:textSize="18dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="13dp"
+                    android:text="5"
+                    android:background="@drawable/pagebtn" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="30dp"
+                    android:textSize="18dp"
+                    android:id="@+id/siix1"
+                    android:fontFamily="monospace"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="13dp"
+                    android:text="6"
+                    android:background="@drawable/pagebtn" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:textSize="18dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="13dp"
+                    android:src="@mipmap/rightarrow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/twitter" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@mipmap/instagram" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="50dp"
+                    android:src="@mipmap/youtube" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/view"
+                android:backgroundTint="#555555" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:letterSpacing="0.100"
+                android:lineSpacingExtra="10dp"
+                android:text="support@openui.design \n        +60 825 876 \n08:00 - 22:00 - Everyday"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/view"
+                android:backgroundTint="#555555" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:text="About"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <Button
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="Contact"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <Button
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:text="Blog"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="#D6D6D6"
+                android:gravity="center"
+                android:text="Copyright© OpenUI All Rights Reserved."
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

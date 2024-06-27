@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/category1" android:title="Profile">
+        <menu>
+            <item android:id="@+id/subcategory1_1"
+                android:title="Subcategory 1.1" />
+            <item android:id="@+id/subcategory1_2" android:title="Subcategory 1.2" />
+        </menu>
+    </item>
+    <item android:id="@+id/category2" android:title="Category">
+        <menu>
+            <item android:id="@+id/subcategory2_1" android:title="Men" />
+            <item android:id="@+id/subcategory2_2" android:title="Women" />
+            <item android:id="@+id/subcategory2_3" android:title="Child" />
+        </menu>
+    </item>
+    <item android:id="@+id/category3" android:title="About"/>
+    <item android:id="@+id/category4" android:title="Contact"/>
+    <item android:id="@+id/category5" android:title="Blog"/>
+
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shoping"
+        tools:targetApi="31">
+        <activity
+            android:name=".UPIactivity"
+            android:exported="false" />
+        <activity
+            android:name=".BlogList"
+            android:exported="false"/>
+
+        <activity
+            android:name=".otp"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Emptycart"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryViewFull"
+            android:exported="false" />
+        <activity
+            android:name=".FinalCheckOut"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewAddress"
+            android:exported="false" />
+        <activity
+            android:name=".AddCard"
+            android:exported="false" />
+        <activity
+            android:name=".Checkoutaddress"
+            android:exported="false" />
+        <activity
+            android:name=".Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".catgridview"
+            android:exported="false" />
+        <activity
+            android:name=".Blog_Gridview"
+            android:exported="false" />
+        <activity
+            android:name=".pageNotFound"
+            android:exported="false" />
+        <activity
+            android:name=".contactus"
+            android:exported="false" />
+        <activity
+            android:name=".about"
+            android:exported="false" />
+        <activity
+            android:name=".CollectionDetails"
+            android:exported="false" />
+        <activity
+            android:name=".categoryView"
+            android:exported="false" />
+        <activity
+            android:name=".product1"
+            android:exported="false" />
+        <activity
+            android:name=".addtocart"
+            android:exported="false" />
+        <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".blogpost"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

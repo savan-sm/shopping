@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/my_drawer_layout"
+    tools:context=".Blog_Gridview">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:background="@mipmap/l1" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeableImageView"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:src="@mipmap/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/shapeableImageView">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/btnbg"
+                android:padding="5dp"
+                android:text="Fashion"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/btnbg"
+                android:padding="5dp"
+                android:text="Promo"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/btnbg"
+                android:padding="5dp"
+                android:text="Policy"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="14dp"
+                android:backgroundTint="@color/btnbg"
+                android:padding="6dp"
+                android:text="Lookbook"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/btnbg"
+                android:padding="5dp"
+                android:text="Fashion"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="230dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout">
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/simgv1"
+                        android:layout_width="390dp"
+                        android:layout_height="255dp"
+                        android:layout_marginBottom="50dp"
+                        android:onClick="detail"
+                        android:src="@mipmap/rectangle"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="352dp"
+                        android:layout_marginTop="10dp"
+                        android:onClick="saveunsave"
+                        android:src="@mipmap/unsave"
+                        app:layout_constraintStart_toStartOf="@+id/simgv1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/shade"
+                        android:layout_marginTop="145dp"
+                        android:src="@mipmap/blackshade"
+                        app:layout_constraintStart_toStartOf="@+id/simgv1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="361dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="150dp"
+                        android:src="@mipmap/text1"
+                        app:layout_constraintStart_toStartOf="@+id/simgv1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="70dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Tips"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Fashion"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="4 days ago"
+                        android:textColor="#888888"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/simgv2"
+                        android:layout_width="390dp"
+                        android:layout_height="240dp"
+                        android:layout_marginBottom="40dp"
+                        android:src="@mipmap/rectangle1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="356dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@mipmap/unsave"
+                        app:layout_constraintStart_toStartOf="@+id/simgv2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="155dp"
+                        android:src="@mipmap/blackshade"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="364dp"
+                        android:layout_height="86dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="160dp"
+                        android:src="@mipmap/text1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="70dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Tips"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Fashion"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="4 days ago"
+                        android:textColor="#888888"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/simgv3"
+                        android:layout_width="390dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_height="255dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/rectangle2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="352dp"
+                        android:layout_marginTop="28dp"
+                        android:src="@mipmap/unsave"
+                        app:layout_constraintStart_toStartOf="@+id/simgv3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="145dp"
+                        android:src="@mipmap/blackshade"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="361dp"
+                        android:layout_height="95dp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@mipmap/text1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="70dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Tips"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Fashion"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="4 days ago"
+                        android:textColor="#888888"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/simgv4"
+                        android:layout_width="390dp"
+                        android:layout_marginBottom="50dp"
+                        android:layout_height="255dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/rectangle3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageView4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="352dp"
+                        android:layout_marginTop="28dp"
+                        android:src="@mipmap/unsave"
+                        app:layout_constraintStart_toStartOf="@+id/simgv4"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="145dp"
+                        android:src="@mipmap/blackshade"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="361dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="150dp"
+                        android:src="@mipmap/text1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="70dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Tips"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/btnbg"
+                        android:text="#Fashion"
+                        android:textColor="#393838"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="4 days ago"
+                        android:textColor="#888888"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:background="@mipmap/button"
+                    android:backgroundTint="#000000" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="60dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@mipmap/twitter" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="50dp"
+                        android:src="@mipmap/instagram" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="50dp"
+                        android:src="@mipmap/youtube" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@mipmap/view"
+                    android:backgroundTint="#555555" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:letterSpacing="0.100"
+                    android:lineSpacingExtra="10dp"
+                    android:text="support@openui.design \n        +60 825 876 \n08:00 - 22:00 - Everyday"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@mipmap/view"
+                    android:backgroundTint="#555555" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#B7FDF8F8"
+                        android:text="About"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#B7FDF8F8"
+                        android:text="Contact"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <Button
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#B7FDF8F8"
+                        android:text="Blog"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#D6D6D6"
+                    android:gravity="center"
+                    android:text="Copyright© OpenUI All Rights Reserved."
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu"
+        android:id="@+id/navigation" />
+</androidx.drawerlayout.widget.DrawerLayout>

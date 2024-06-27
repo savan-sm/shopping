@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">shoping</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string-array name="address">
+        <item>Select Shipping</item>
+        <item>Pickup at store</item>
+        <item>On Your Address</item>
+    </string-array>
+    <string-array name="payment">
+        <item>Select Payment</item>
+        <item>Debit/Credit Card</item>
+        <item>Cash On Delivery</item>
+        <item>Upi</item>
+    </string-array>
+    <string-array name="dropat">
+        <item>Select Item</item>
+        <item>Home</item>
+        <item>Office</item>
+        <item>Other</item>
+    </string-array>
+</resources>

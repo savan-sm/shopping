@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/m1"/>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:background="@mipmap/l1" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ring1"
+                    android:layout_width="370dp"
+                    android:layout_height="390dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ring1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="97dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/line1"
+                    android:src="@mipmap/line"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/dot1"
+                    android:src="@mipmap/positionview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="97dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/line"
+                    android:id="@+id/line2"
+                    android:layout_marginStart="100dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/dot2"
+                    android:layout_marginStart="100dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/positionview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="97dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/line"
+                    android:id="@+id/line3"
+                    android:layout_marginStart="200dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="100dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/dot3"
+                    android:layout_marginStart="200dp"
+                    android:src="@mipmap/positionview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="97dp"
+                    android:layout_height="10dp"
+                    android:src="@mipmap/line"
+                    android:id="@+id/line4"
+                    android:layout_marginStart="300dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="100dp"
+                    android:id="@+id/dot4"
+                    android:layout_height="10dp"
+                    android:layout_marginStart="300dp"
+                    android:src="@mipmap/positionview"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearly"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearly"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ring1"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ring2"
+                        android:layout_width="130dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ring1" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ring3"
+                        android:layout_width="130dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ring2" />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ring4"
+                        android:layout_width="130dp"
+                        android:layout_weight="1"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ring3" />
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ring5"
+                        android:layout_weight="1"
+                        android:layout_width="130dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@mipmap/ring4" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="5dp"
+                android:src="@mipmap/detail"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@mipmap/btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Gallery"
+                android:textSize="20dp"/>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/imagegirl"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/imagehand"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="350dp"
+                android:layout_height="290dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/imagedia"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:text="Care"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:src="@mipmap/truck"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="Free Flat Rate Shipping"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="2dp"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:src="@mipmap/arrow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="Estimated to be delivered on\n09/11/2021 - 12/11/2021."
+                    android:layout_marginTop="25dp"
+                    android:textColor="#555555"
+                    android:lineSpacingExtra="2dp"
+                    android:textSize="16dp"
+                    android:id="@+id/detail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#DAD5D5"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginStart="90dp"
+                    app:layout_constraintTop_toBottomOf="@id/detail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="87dp"
+                    android:src="@mipmap/tag"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="COD Policy"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="85dp"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="85dp"
+                    android:src="@mipmap/backward"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#DAD5D5"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginStart="90dp"
+                    app:layout_constraintTop_toBottomOf="@id/detail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="130dp"
+                    android:src="@mipmap/refresh"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="Return Policy"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:layout_marginTop="130dp"
+                    android:id="@+id/txt"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginTop="130dp"
+                    android:src="@mipmap/backward"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/text"
+                    android:id="@+id/text"
+                    android:layout_marginHorizontal="55dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt"/>
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/v"
+                    android:background="@mipmap/view"
+                    android:backgroundTint="#4A4747"
+                    android:layout_marginStart="120dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/line11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/v"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/tshirt"
+                            android:layout_width="165dp"
+                            android:layout_height="220dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/ringimg1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="190dp"
+                            android:id="@+id/unlike"
+                            android:src="@mipmap/unfillheart"
+                            app:layout_constraintBottom_toBottomOf="@+id/tshirt"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="21WN"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tshirt" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="reversible angora cardigan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="$120"
+                            android:textColor="#DD8560"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/tshirt1"
+                            android:layout_width="165dp"
+                            android:layout_height="220dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/ringimg2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/p2"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="190dp"
+                            android:src="@mipmap/unfillheart"
+                            app:layout_constraintBottom_toBottomOf="@+id/tshirt1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Lame"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tshirt1" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="reversible angora cardigan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="$120"
+                            android:textColor="#DD8560"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/ringlay"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line11"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ts1"
+                            android:layout_width="165dp"
+                            android:layout_height="220dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/ringimg3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="150dp"
+                            android:id="@+id/p3"
+                            android:layout_marginTop="190dp"
+                            android:src="@mipmap/unfillheart"
+                            app:layout_constraintBottom_toBottomOf="@+id/ts1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="21WN"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ts1" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="reversible angora cardigan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="$120"
+                            android:textColor="#DD8560"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/tshirt11"
+                            android:layout_width="165dp"
+                            android:layout_height="220dp"
+                            android:layout_marginStart="10dp"
+                            android:src="@mipmap/ringimg4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="150dp"
+                            android:layout_marginTop="190dp"
+                            android:id="@+id/p4"
+                            android:src="@mipmap/unfillheart"
+                            app:layout_constraintBottom_toBottomOf="@+id/tshirt11"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="Lame"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tshirt11" />
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="reversible angora cardigan"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="$120"
+                            android:textColor="#DD8560"
+                            android:textSize="18dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ringlay">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="60dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@mipmap/twitter" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="50dp"
+                            android:src="@mipmap/instagram" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="50dp"
+                            android:src="@mipmap/youtube" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="140dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@mipmap/view"
+                        android:backgroundTint="#555555" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:letterSpacing="0.100"
+                        android:lineSpacingExtra="10dp"
+                        android:text="support@openui.design \n        +60 825 876 \n08:00 - 22:00 - Everyday"
+                        android:textSize="18dp" />
+
+                    <View
+                        android:layout_width="140dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25dp"
+                        android:background="@mipmap/view"
+                        android:backgroundTint="#555555" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:backgroundTint="@color/white"
+                            android:text="About"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <Button
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:text="Contact"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <Button
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:text="Blog"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#D6D6D6"
+                        android:gravity="center"
+                        android:text="Copyright© OpenUI All Rights Reserved."
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
